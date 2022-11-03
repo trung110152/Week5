@@ -6,27 +6,27 @@
 </head>
 <body>
 <script>
-function findMax(arr){
-let first=arr[0];
-let second=arr[0];
+    function findMax(arr) {
+        let first = arr[0];
+        let second = arr[0];
 
-for(let i=1;i<arr.length;i++){
-if( first < arr[i] ){
-first=arr[i]
-}
-}
+        for (let i = 1; i < arr.length; i++) {
+            if (first < arr[i]) {
+                first = arr[i]
+            }
+        }
 
-for(let j=1;j<arr.length;j++){
-if( second < arr[j] && arr[j] < first ){
-second=arr[j]
-}
-}
+        for (let j = 1; j < arr.length; j++) {
+            if (second < arr[j] && arr[j] < first) {
+                second = arr[j]
+            }
+        }
 
-alert('Giá trị lớn thứ 2 của mảng là: ' + second)
-}
+        alert('Điểm thi lớn thứ 2 của danh sách là: ' + second)
+    }
 
-let arr=[1,2,3,4,5,6,7];
-findMax(arr)
+    let arr = [1, 2, 3, 4, 5, 6, 6, 7, 7];
+    findMax(arr)
 </script>
 </body>
 </html>
